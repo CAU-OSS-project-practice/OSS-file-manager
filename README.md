@@ -324,21 +324,22 @@ Untracked - Staged files ex) When executing the git rm --cached command, untrack
 </tbody>
 </table>
 
-
 ## Function design and description(v2.0)
 
-> All photos can be viewed as enlarged images when clicked.😀  
+> All photos can be viewed as enlarged images when clicked.😀
 
 New Feature has updated.
 
 1. We updated basic Git branch associated action(Create, Delete, Rename, Checkout).
 2. We updated Git merge action
 3. And We can also check Git commit history
-3. Git clone from Github
+4. Git clone from Github
 
 Feature 1 , 2 and 3 can be activated through the Branch Menu button.  
-Feature No. 3 was implemented by adding a button to the place where v1.0's git-related actions were gathered.  
+Feature No. 3 was implemented by adding a button to the place where v1.0's git-related actions were gathered.
+
 ### <b>Feature 1. Branch Associated Action </b><br>
+
 <table><tbody>
 		<tr>
 			<td colspan=2>
@@ -440,8 +441,6 @@ Feature No. 3 was implemented by adding a button to the place where v1.0's git-r
 </tbody>
 </table>
 
-
-
 <table><tbody>
 		<tr>
 			<td colspan=3>
@@ -477,7 +476,6 @@ Feature No. 3 was implemented by adding a button to the place where v1.0's git-r
 		</tr>
 </tbody>
 </table>
-
 
 <table><tbody>
 		<tr>
@@ -540,6 +538,7 @@ Feature No. 3 was implemented by adding a button to the place where v1.0's git-r
 </table>
 
 ### <b>Feature 2. Git merge Action </b><br>
+
 <br> We updated the Feature Git merge Action.
 <br> We provides a branch list that will be merged to current branch
 <br> And after that, by clicking merge button, user can do merge action
@@ -678,72 +677,59 @@ Feature No. 3 was implemented by adding a button to the place where v1.0's git-r
 </tbody>
 </table>
 
-### <b>Feature 3. Git clone from Github</b>
+### <b>Feature 3. Git Clone from Github</b>
 
 <table><tbody>
 		<tr>
 			<td colspan=2>
 				<br>
-				<b>Git clone from public repository</b><br>
+				<b>Git Clone from public repository</b><br>
 				<br>
 			</td>
 		</tr>
-		<tr>
+				<tr>
 			<td width="50%">
 				<h4 align="center">
-				<a href = "https://raw.githubusercontent.com/CAU-OSS-project-practice/OSS-file-manager/develop/data/execution_image/rm%20_cached_before.png"><img src="/data/execution_image/rm _cached_before.png" width="100%" height="100%">
-					</a><br><br>git rm --cached before
+					<img width="1434" alt="public_repository" src="https://github.com/CAU-OSS-project-practice/OSS-file-manager/assets/63959171/54947d0b-0de3-404b-8c67-e1c62a7a37ad">
+          <br><br>Input public repository address
 				</h4>
 			</td>
 			<td width="50%">
 	   			<h4 align="center">
-		   		<a href="https://raw.githubusercontent.com/CAU-OSS-project-practice/OSS-file-manager/develop/data/execution_image/rm_cached_after.png"><img src="/data/execution_image/rm_cached_after.png" width="100%" height="100%"></a><br><br>git rm --cached after -> 실제 디렉토리에서 삭제되진 않았지만 git repository에서 삭제됨(untracked)됨</h4></td>
+					<img width="1434" alt="after_public_clone" src="https://github.com/CAU-OSS-project-practice/OSS-file-manager/assets/63959171/6bcb7f9a-46cb-48b3-99c7-75597a5faf3d">
+            <br><br>After click the clone button, clone the public repository</h4></td>
 		</tr>
+
 </tbody>
 </table>
 
 <table><tbody>
 		<tr>
-			<td colspan=2>
+			<td colspan=3>
 				<br>
 				<b>Git Clone from private repository</b><br>
 				<br>
 			</td>
 		</tr>
 		<tr>
-			<td width="50%">
+			<td width="33%">
 				<h4 align="center">
-  <img width="804" alt="git_mv_open_mv_window" src="https://github.com/rbgksqkr/react/assets/63959171/eb0b1047-049b-484a-9a06-e3807984fe8d">
-          <br><br>변경할 파일 이름 작성
+					<img width="1433" alt="private_input" src="https://github.com/CAU-OSS-project-practice/OSS-file-manager/assets/63959171/498c21b4-2cca-4b45-bf21-4a743a679fe4">
+					<br><br>Input private repository address
 				</h4>
 			</td>
-			<td width="50%">
-	   			<h4 align="center">
-<img width="804" alt="git_mv_rename" src="https://github.com/rbgksqkr/react/assets/63959171/30fd2f03-2777-455e-80df-dfcda1f428c0">
-            <br><br>파일 이름 변경</h4></td>
-		</tr>
-</tbody>
-</table>
-
-<table><tbody>
-		<tr>
-			<td colspan=2>
-				<br>
-				<b>Saving The ID and token information should be stored somewhere for the future use.</b><br>
-				<br>
-			</td>
-		</tr>
-		<tr>
-			<td width="50%">
+			<td width="33%">
 				<h4 align="center">
-  <img width="804" alt="git_mv_open_mv_window" src="https://github.com/rbgksqkr/react/assets/63959171/eb0b1047-049b-484a-9a06-e3807984fe8d">
-          <br><br>변경할 파일 이름 작성
+				<img width="1434" alt="private_repository" src="https://github.com/CAU-OSS-project-practice/OSS-file-manager/assets/63959171/e8490b59-da4f-40de-8cf1-5b19c85196ca">
+				<br><br>If it is private repository, you must input your ID and access token
 				</h4>
 			</td>
-			<td width="50%">
+			<td width="33%">
 	   			<h4 align="center">
-<img width="804" alt="git_mv_rename" src="https://github.com/rbgksqkr/react/assets/63959171/30fd2f03-2777-455e-80df-dfcda1f428c0">
-            <br><br>파일 이름 변경</h4></td>
+		   		<img width="1434" alt="after_private_clone" src="https://github.com/CAU-OSS-project-practice/OSS-file-manager/assets/63959171/8a0f6ef6-44de-4d08-a795-a50e2ab7964e">
+				<br><br>After click the clone button, clone the private repository and save your ID and access token
+				</h4>
+			</td>
 		</tr>
 </tbody>
 </table>
@@ -825,6 +811,8 @@ Tools used for the collaborative development
 - [github](https://github.com/CAU-OSS-project-practice/OSS-file-manager)
 
 ## Copyleft / End User License
+
 This program is licensed under the Python Software Foundation License (PSF License).
 third party softwares that may be contained in this program is referd in license.txt below.
+
 - https://github.com/CAU-OSS-project-practice/OSS-file-manager/blob/main/license
